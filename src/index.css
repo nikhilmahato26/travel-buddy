@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #78be20;
+  --forest: #355e3b;
+  --dark-green: #214b2f;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-light-gray font-body text-dark-green;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  @apply font-heading;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #eef1ee;
+}
+::-webkit-scrollbar-thumb {
+  background: #78be20;
+  border-radius: 10px;
+}
+
+@layer components {
+  .glass {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+  }
+  .glass-light {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .glass-nav {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid rgba(33, 75, 47, 0.08);
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 font-heading font-semibold text-dark-green transition-all duration-300 hover:bg-primary-dark hover:shadow-glow hover:-translate-y-0.5;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/70 bg-white/10 px-7 py-3.5 font-heading font-semibold text-white backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-dark-green hover:-translate-y-0.5;
+  }
+  .section-pad {
+    @apply px-5 py-20 sm:px-8 md:py-28 lg:px-12;
+  }
+  .container-max {
+    @apply mx-auto w-full max-w-7xl;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 font-heading text-xs font-semibold uppercase tracking-[0.18em] text-forest;
+  }
+}
+
+.text-shadow-lg {
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.gradient-text {
+  background: linear-gradient(120deg, #78be20, #355e3b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
