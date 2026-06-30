@@ -40,13 +40,11 @@ export default function Navbar() {
     >
       <nav className="container-max flex items-center justify-between px-5 sm:px-8 lg:px-12">
         <Link to="/" className="flex items-center gap-2.5">
-          <span
-            className={`grid h-10 w-10 place-items-center rounded-xl transition-colors ${
-              solid ? 'bg-dark-green text-primary' : 'bg-white/15 text-white backdrop-blur'
-            }`}
-          >
-            <Mountain size={22} strokeWidth={2.2} />
-          </span>
+          <img
+            src="/logo.jpg"
+            alt="Travel Buddy Tours"
+            className="h-20 w-20 rounded-full object-cover shadow-sm border border-white/25"
+          />
           <span className="leading-tight">
             <span
               className={`block font-heading text-lg font-bold tracking-tight ${

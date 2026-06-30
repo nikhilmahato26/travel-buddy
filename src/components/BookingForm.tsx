@@ -19,6 +19,7 @@ const destinationOptions = [
   'Majuli',
   'Kaziranga',
   'Bhutan',
+  'Sikkim & Darjeeling',
 ]
 
 const packageTypes = ['Family', 'Honeymoon', 'Group / Friends', 'Solo', 'Wildlife Safari', 'Adventure']

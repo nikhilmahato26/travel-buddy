@@ -108,7 +108,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Popular Destinations"
             title="Where Will Your Story Begin?"
-            subtitle="Six unforgettable North-East destinations, each with its own magic."
+            subtitle="Seven unforgettable North-East destinations, each with its own magic."
           />
           <Stagger className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {destinations.map((d, i) => (

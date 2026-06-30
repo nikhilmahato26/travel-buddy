@@ -73,6 +73,16 @@ export const destinations: Destination[] = [
     highlights: ["Tiger’s Nest Monastery", 'Punakha Dzong', 'Thimphu', 'Paro Valley'],
     bestTime: 'Mar – May, Sep – Nov',
   },
+  {
+    slug: 'sikkim-darjeeling',
+    name: 'Sikkim & Darjeeling',
+    tagline: 'Kingdom of Kanchenjunga & Legendary Tea Gardens',
+    image: img('1544735716-392fe2489ffa'),
+    blurb:
+      'From the towering snow peaks of Mt. Kanchenjunga in Sikkim to the misty rolling tea estates of Darjeeling, experience the ultimate Himalayan escape.',
+    highlights: ['Tiger Hill Sunrise', 'Gangtok Monasteries', 'Darjeeling Toy Train', 'Gurudongmar Lake'],
+    bestTime: 'Mar – Jun, Oct – Dec',
+  },
 ]
 
 export interface Package {
@@ -160,6 +170,18 @@ export const packages: Package[] = [
     description:
       'Dawn-lit mountains, Ziro valley, alpine passes and immersive tribal heritage across India’s wildest frontier.',
   },
+  {
+    slug: 'sikkim-darjeeling-himalayan-heights',
+    name: 'Sikkim & Darjeeling Himalayan Heights',
+    destination: 'Sikkim & Darjeeling',
+    duration: '6 Days',
+    travelers: '4 Travelers',
+    rating: 5,
+    price: '₹21,999',
+    image: img('1544735716-392fe2489ffa'),
+    description:
+      'Marvel at Mt. Kanchenjunga, ride the iconic Darjeeling Himalayan Toy Train, and explore the serene monasteries and alpine lakes of Gangtok.',
+  },
 ]
 
 export interface Experience {
@@ -190,6 +212,7 @@ export const gallery = [
   { src: img('1593693411515-c20261bcad6e'), caption: 'River Islands', tall: false },
   { src: img('1528605248644-14dd04022da1'), caption: 'Local Culture', tall: true },
   { src: img('1452421822248-d4c2b47f0c81'), caption: 'Sunrise Views', tall: false },
+  { src: img('1544735716-392fe2489ffa'), caption: 'Darjeeling Tea Gardens', tall: false },
 ]
 
 export const testimonials = [
@@ -268,6 +291,6 @@ export const processSteps = [
 export const stats = [
   { value: 5000, suffix: '+', label: 'Happy Travelers' },
   { value: 50, suffix: '+', label: 'Curated Tours' },
-  { value: 7, suffix: '', label: 'Destinations' },
+  { value: 8, suffix: '', label: 'Destinations' },
   { value: 4.9, suffix: '★', label: 'Average Rating' },
 ]

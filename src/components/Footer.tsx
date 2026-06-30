@@ -18,9 +18,11 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <Link to="/" className="flex items-center gap-2.5">
-              <span className="grid h-10 w-10 place-items-center rounded-xl bg-primary text-dark-green">
-                <Mountain size={22} strokeWidth={2.2} />
-              </span>
+              <img
+                src="/logo.jpg"
+                alt="Travel Buddy Tours"
+                className="h-20 w-20 rounded-full object-cover shadow-sm border border-white/20"
+              />
               <span className="leading-tight">
                 <span className="block font-heading text-lg font-bold">Travel Buddy</span>
                 <span className="block text-[11px] font-medium uppercase tracking-[0.22em] text-primary">
@@ -71,7 +73,7 @@ export default function Footer() {
           <div>
             <h4 className="font-heading text-base font-semibold">Destinations</h4>
             <ul className="mt-5 space-y-3">
-              {['Assam', 'Meghalaya', 'Arunachal Pradesh', 'Tawang', 'Bhutan'].map((d) => (
+              {['Assam', 'Meghalaya', 'Arunachal Pradesh', 'Tawang', 'Sikkim & Darjeeling', 'Bhutan'].map((d) => (
                 <li key={d}>
                   <Link
                     to="/destinations"

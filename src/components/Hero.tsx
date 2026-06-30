@@ -96,7 +96,7 @@ export default function Hero() {
           className="mt-6 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg"
         >
           Discover breathtaking landscapes, wildlife adventures, monasteries, crystal-clear rivers and
-          unforgettable journeys across Assam, Meghalaya, Arunachal Pradesh, Tawang, Bhutan & beyond.
+          unforgettable journeys across Assam, Meghalaya, Arunachal Pradesh, Tawang, Sikkim, Darjeeling, Bhutan & beyond.
         </motion.p>
 
         <motion.div

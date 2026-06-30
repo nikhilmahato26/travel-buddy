@@ -7,6 +7,7 @@ const items = [
   'Tea Gardens of Assam',
   'Tiger’s Nest Bhutan',
   'Cherrapunji Falls',
+  'Tiger Hill Darjeeling',
 ]
 
 export default function Marquee() {
